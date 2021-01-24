@@ -2,10 +2,10 @@ package book
 
 import (
 	"errors"
-	"github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/pgn"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/move"
+	"github.com/aboosoyeed/chess/game"
+	"github.com/aboosoyeed/chess/pgn"
+	"github.com/aboosoyeed/chess/position"
+	"github.com/aboosoyeed/chess/position/move"
 )
 
 // FromPGN creates an opening book from a PGN. 'depth' is the number of plies

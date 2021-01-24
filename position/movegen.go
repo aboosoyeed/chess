@@ -1,10 +1,10 @@
 package position
 
 import (
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/board"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/board"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 )
 
 // LegalMoves returns only the legal moves that can be made.

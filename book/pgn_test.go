@@ -1,7 +1,7 @@
 package book
 
 import (
-	"github.com/andrewbackes/chess/pgn"
+	"github.com/aboosoyeed/chess/pgn"
 	"strings"
 	"testing"
 )

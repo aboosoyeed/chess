@@ -3,11 +3,11 @@ package game
 
 import (
 	"fmt"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/board"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position"
+	"github.com/aboosoyeed/chess/position/board"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 	"time"
 )
 
@@ -55,6 +55,12 @@ func (G *Game) ActiveColor() piece.Color {
 func (G *Game) QuickMove(m move.Move) {
 	from, to, movingPiece, capturedPiece := G.decompose(m)
 	G.makeMove(m, from, to, movingPiece, capturedPiece)
+}
+
+func (G *Game) MakeMoveSAN(san string) (GameStatus, error) {
+	m, _ := G.Position().ParseMove(san)
+	m.San = san
+	return G.MakeMove(m)
 }
 
 // MakeMove makes the specified move on the game position. Game state information
@@ -128,8 +134,8 @@ func (G *Game) illegalMoveStatus() GameStatus {
 	return BlackIllegalMove
 }
 
-// TODO(andrewbackes): threeFold detection should not have to go through all of the move history.
-// BUG(andrewbackes): starting FEN is not considered when calculating threefold.
+// TODO(aboosoyeed): threeFold detection should not have to go through all of the move history.
+// BUG(aboosoyeed): starting FEN is not considered when calculating threefold.
 func (G *Game) threeFold() bool {
 	hash := G.Position().Polyglot()
 	if G.Position().ThreeFoldCount[hash] >= 3 {

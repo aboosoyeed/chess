@@ -1,9 +1,9 @@
 package position
 
 import (
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/board"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/board"
+	"github.com/aboosoyeed/chess/position/square"
 )
 
 // Hash is a polyglot encoding of the given position.

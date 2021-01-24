@@ -5,11 +5,11 @@ package fen
 import (
 	"errors"
 	"fmt"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/board"
-	"github.com/andrewbackes/chess/position/reader"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position"
+	"github.com/aboosoyeed/chess/position/board"
+	"github.com/aboosoyeed/chess/position/reader"
+	"github.com/aboosoyeed/chess/position/square"
 	"strconv"
 	"strings"
 )

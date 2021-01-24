@@ -2,11 +2,11 @@ package pgn
 
 import (
 	"fmt"
-	"github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/fen"
+	"github.com/aboosoyeed/chess/game"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 	"strings"
 	"testing"
 )

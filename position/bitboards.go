@@ -2,8 +2,8 @@ package position
 
 import (
 	"fmt"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/square"
 )
 
 // BitBoard is a 64 bit integer where each bit represents a square on

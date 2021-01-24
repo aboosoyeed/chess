@@ -3,17 +3,17 @@
 package position
 
 import (
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/board"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/board"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 	"time"
 )
 
 // Position represents the state of a game during a player's turn.
 type Position struct {
 	// bitBoard has one bitBoard per player per color.
-	// TODO(andrewbackes): When bitboard was changed to a map vs [2][6]uint64 array,
+	// TODO(aboosoyeed): When bitboard was changed to a map vs [2][6]uint64 array,
 	// the time to run unit tests increased from around 1 minute to around 7 minutes.
 	// It should probably be changed back. The change was made because piece.Type None
 	// was moved to the from the the None, Pawn, ..., King iota for the const piece.Type.
@@ -227,6 +227,10 @@ func (p *Position) MakeMove(m move.Move) *Position {
 	q.adjustMoveCounter(movingPiece, capturedPiece)
 	q.adjustCastlingRights(movingPiece, from, to)
 	q.adjustEnPassant(movingPiece, from, to)
+	if m.San != "" {
+		f := GetFlag(m.San, movingPiece, from, to, p)
+		m.Flag = f
+	}
 	q.adjustBoard(m, from, to, movingPiece, capturedPiece)
 	q.Clocks[q.ActiveColor] -= m.Duration
 	q.MovesLeft[q.ActiveColor]--
@@ -266,6 +270,7 @@ func (p *Position) adjustEnPassant(movingPiece piece.Piece, from, to square.Squa
 		if int(from)-int(to) == 16 || int(from)-int(to) == -16 {
 			s := square.Square(int(from) + []int{8, -8}[movingPiece.Color])
 			p.EnPassant = s
+
 		}
 	} else {
 		p.EnPassant = square.NoSquare

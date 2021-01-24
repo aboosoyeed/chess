@@ -3,9 +3,9 @@ package book
 
 import (
 	"encoding/binary"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/position"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 	"io"
 	"os"
 	"sort"

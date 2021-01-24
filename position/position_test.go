@@ -2,9 +2,9 @@ package position
 
 import (
 	"fmt"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 	"testing"
 )
 
@@ -85,7 +85,7 @@ func (b *Position) printBitBoards() {
 }
 
 /*
-// TODO(andrewbackes): add more advanced insufficient material checks.
+// TODO(aboosoyeed): add more advanced insufficient material checks.
 func TestInsufMaterial(t *testing.T) {
 	fens := []string{
 		"8/8/4kb2/8/8/3K4/8/8 w - - 0 1",

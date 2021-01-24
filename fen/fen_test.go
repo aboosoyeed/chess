@@ -1,12 +1,12 @@
 package fen
 
 import (
-	"github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/board"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/game"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position"
+	"github.com/aboosoyeed/chess/position/board"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 	"strings"
 	"testing"
 )

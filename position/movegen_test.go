@@ -1,9 +1,9 @@
 package position
 
 import (
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/move"
+	"github.com/aboosoyeed/chess/position/square"
 	"testing"
 )
 

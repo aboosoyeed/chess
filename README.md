@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/andrewbackes/chess)](https://goreportcard.com/report/github.com/andrewbackes/chess) [![GoDoc](https://godoc.org/github.com/andrewbackes/chess?status.svg)](https://godoc.org/github.com/andrewbackes/chess) [![Build Status](https://travis-ci.org/andrewbackes/chess.svg?branch=master)](https://travis-ci.org/andrewbackes/chess) [![Coverage Status](https://coveralls.io/repos/github/andrewbackes/chess/badge.svg?branch=master)](https://coveralls.io/github/andrewbackes/chess?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aboosoyeed/chess)](https://goreportcard.com/report/github.com/aboosoyeed/chess) [![GoDoc](https://godoc.org/github.com/aboosoyeed/chess?status.svg)](https://godoc.org/github.com/aboosoyeed/chess) [![Build Status](https://travis-ci.org/aboosoyeed/chess.svg?branch=master)](https://travis-ci.org/aboosoyeed/chess) [![Coverage Status](https://coveralls.io/repos/github/aboosoyeed/chess/badge.svg?branch=master)](https://coveralls.io/github/aboosoyeed/chess?branch=master)
 
 # Chess
 Multipurpose chess package for Go/Golang.
@@ -14,12 +14,12 @@ This package provides tools for working with chess games. You can:
 - Generate legal moves from any position
 - and more
 
-For details you can visit the [godoc](https://godoc.org/github.com/andrewbackes/chess)
+For details you can visit the [godoc](https://godoc.org/github.com/aboosoyeed/chess)
 
 ## How to get it
 If you have your GOPATH set in the ([recommended way](https://golang.org/doc/code.html#GOPATH)) then you can use `go get`:
 
-```go get github.com/andrewbackes/chess/<pkg name>```
+```go get github.com/aboosoyeed/chess/<pkg name>```
 
 otherwise you can clone the repo.
 
@@ -33,8 +33,8 @@ The opinion of this package is that a chess game is a sequence of chess position
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/position"
+    "github.com/aboosoyeed/chess/game"
+	"github.com/aboosoyeed/chess/position"
 )
 
 func ExampleFoolsMate() {
@@ -62,8 +62,8 @@ func ExampleFoolsMate() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/game"
-    "github.com/andrewbackes/chess/position"
+    "github.com/aboosoyeed/chess/game"
+    "github.com/aboosoyeed/chess/position"
     "time"
 )
 
@@ -81,7 +81,7 @@ func ExampleTimedGame() {
 import (
 	"bufio"
 	"fmt"
-	"github.com/andrewbackes/chess/game"
+	"github.com/aboosoyeed/chess/game"
 	"os"
 	"time"
 )
@@ -108,7 +108,7 @@ func ExamplePlayTimedGame() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/pgn"
+    "github.com/aboosoyeed/chess/pgn"
     "os"
 )
 
@@ -127,7 +127,7 @@ func ExamplePrintGMGames() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/fen"
+    "github.com/aboosoyeed/chess/fen"
 )
 
 func ExampleSaavedraPositionFEN() {
@@ -145,8 +145,8 @@ func ExampleSaavedraPositionFEN() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/game"
+    "github.com/aboosoyeed/chess/fen"
+	"github.com/aboosoyeed/chess/game"
 )
 
 func ExampleSaavedraPositionMoves() {

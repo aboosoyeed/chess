@@ -1,7 +1,7 @@
 package position
 
 import (
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/position/square"
 )
 
 var (

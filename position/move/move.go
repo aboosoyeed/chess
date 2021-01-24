@@ -2,8 +2,8 @@
 package move
 
 import (
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position/square"
 	"time"
 )
 
@@ -13,6 +13,8 @@ type Move struct {
 	Destination square.Square `json:"destination"`
 	Promote     piece.Type    `json:"promote,omitempty"`
 	Duration    time.Duration `json:"duration,omitempty"`
+	San         string
+	Flag        int
 }
 
 var (

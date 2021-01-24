@@ -8,8 +8,8 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
-	"github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/position"
+	"github.com/aboosoyeed/chess/fen"
+	"github.com/aboosoyeed/chess/position"
 	"io"
 	"strings"
 )

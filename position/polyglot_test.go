@@ -2,8 +2,8 @@ package position
 
 /*
 import (
-	//"github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/piece"
+	//"github.com/aboosoyeed/chess/fen"
+	"github.com/aboosoyeed/chess/piece"
 	"testing"
 )
 

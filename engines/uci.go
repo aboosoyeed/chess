@@ -2,11 +2,11 @@ package engines
 
 import (
 	"bufio"
-	"github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/move"
+	"github.com/aboosoyeed/chess/fen"
+	"github.com/aboosoyeed/chess/game"
+	"github.com/aboosoyeed/chess/piece"
+	"github.com/aboosoyeed/chess/position"
+	"github.com/aboosoyeed/chess/position/move"
 	"strconv"
 	"strings"
 	"time"

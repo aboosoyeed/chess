@@ -4,8 +4,8 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
-	"github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/position/move"
+	"github.com/aboosoyeed/chess/game"
+	"github.com/aboosoyeed/chess/position/move"
 	"io"
 	"strings"
 )

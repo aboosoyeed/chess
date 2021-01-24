@@ -4,8 +4,8 @@ package engines
 import (
 	"bufio"
 	"errors"
-	"github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/position"
+	"github.com/aboosoyeed/chess/game"
+	"github.com/aboosoyeed/chess/position"
 	"io"
 	"os/exec"
 	"path/filepath"

@@ -2,8 +2,8 @@
 package diag
 
 import (
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/move"
+	"github.com/aboosoyeed/chess/position"
+	"github.com/aboosoyeed/chess/position/move"
 )
 
 // Divide is a diagnostic tool used for figuring out which moves are not

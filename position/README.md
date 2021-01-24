@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/andrewbackes/chess/board?status.svg)](https://godoc.org/github.com/andrewbackes/chess/board)
+[![GoDoc](https://godoc.org/github.com/aboosoyeed/chess/board?status.svg)](https://godoc.org/github.com/aboosoyeed/chess/board)
 
 # Position
 
@@ -11,6 +11,6 @@ generation is quick.
 
 If you have your GOPATH set in the recommended way ([golang.org](https://golang.org/doc/code.html#GOPATH)):
 
-```go get github.com/andrewbackes/chess/position```
+```go get github.com/aboosoyeed/chess/position```
 
 otherwise you can clone the repo.
